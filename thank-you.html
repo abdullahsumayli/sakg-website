@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شكراً لك – SAKG | دليل مطابخ الرياض</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .thank-you-container {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+      animation: slideIn 0.6s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .thank-you-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      display: block;
+      animation: bounce 0.6s ease 0.2s backwards;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #0D47A1;
+      margin: 0 0 10px;
+      font-weight: 900;
+    }
+
+    .thank-you-subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .status-message {
+      background: #e3f2fd;
+      border-left: 4px solid #0D47A1;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #0D47A1;
+      line-height: 1.8;
+    }
+
+    .status-message strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .details-box {
+      background: #f9fafb;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .details-box p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    .details-box strong {
+      color: #0D47A1;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0D47A1, #08306d);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(13, 71, 161, 0.3);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #0D47A1;
+      border: 2px solid #0D47A1;
+    }
+
+    .btn-secondary:hover {
+      background: #e3f2fd;
+      transform: translateY(-2px);
+    }
+
+    .footer-note {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 11px;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .social-icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #e3f2fd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-icon:hover {
+      background: #0D47A1;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      .thank-you-container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .thank-you-icon {
+        font-size: 60px;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thank-you-container">
+    <span class="thank-you-icon">✅</span>
+
+    <h1>شكراً لكم!</h1>
+    <p class="thank-you-subtitle">تم استقبال طلبكم بنجاح</p>
+
+    <div class="status-message">
+      <strong>🎯 حالة الطلب</strong>
+      جاري معالجة طلبكم في أسرع وقت. سيتواصل معكم أحد فريق المعارض المتعاونة خلال
+      <strong>24 ساعة عمل</strong>
+    </div>
+
+    <div class="details-box">
+      <p>
+        <strong>📱 ستتم معالجة الطلب من خلال:</strong>
+      </p>
+      <p>✓ مراجعة بيانات الموقع والميزانية</p>
+      <p>✓ اختيار أنسب معرض لحيّك</p>
+      <p>✓ التواصل المباشر عبر الواتساب</p>
+      <p>✓ جدولة زيارة الفني لقياس المطبخ</p>
+    </div>
+
+    <div class="status-message" style="background: #f3e5f5; border-left-color: #9c27b0; color: #6a1b9a;">
+      <strong>💡 نصيحة مهمة</strong>
+      تأكد من فتح الواتساب والبريد الإلكتروني للتواصل مع المعرض المختار
+    </div>
+
+    <div class="social-icons">
+      <a href="https://wa.me/966" class="social-icon" title="تطبيق واتساب">
+        💬
+      </a>
+      <a href="mailto:goworknow777@gmail.com" class="social-icon" title="البريد الإلكتروني">
+        ✉️
+      </a>
+      <a href="tel:+966" class="social-icon" title="الاتصال الهاتفي">
+        ☎️
+      </a>
+    </div>
+
+    <div class="action-buttons">
+      <a href="index.html" class="btn btn-primary">العودة للصفحة الرئيسية</a>
+      <a href="index.html#request" class="btn btn-secondary">تقديم طلب آخر</a>
+    </div>
+
+    <div class="footer-note">
+      <p>
+        © 2025 SAKG – Saudi Kitchens Guide<br />
+        جميع الحقوق محفوظة
+      </p>
+      <p style="margin-top: 10px; font-size: 10px;">
+        إذا لم تتلق رسالة خلال 24 ساعة، يرجى التواصل بنا مباشرة عبر الواتساب
+      </p>
+    </div>
+  </div>
+</body>
+</html>
